@@ -1,0 +1,243 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-dash-brand {
+  color: #e33e33;
+  font-size: larger;
+  font-weight: bold;
+  white-space: normal;
+  text-align: left;
+  word-break: break-all;
+}
+
+a.navbar-dash-brand:hover {
+  color: #f35045;
+  white-space: normal;
+  text-align: left;
+  word-break: break-all;
+  text-decoration: none;
+}
+
+.nav-dash-link {
+  color: #f3ffe1;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav-dash-link:hover {
+  color: #9bc974;
+  text-decoration: none;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #e33e33;
+}
+
+a:hover {
+  color: #e33e33;
+  text-decoration: underline;
+}
+
+.btn-primary {
+  color: #fff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-dash {
+  background-color: #000805;
+  margin-bottom: 0px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  z-index: 1;
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.250);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.login-body {
+  background-color: #87b85d;
+  /* background-image: url('/img/background6.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.contain {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.contain-nav {
+  max-width: 100%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.auth {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.inner {
+  background-color: #f3ffe1;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.elem {
+  margin-bottom: 0.25rem;
+}
+
+.auth-button {
+  color: #f3ffe1;
+  border-color: #e33e33;
+  background-color: #e33e33;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+.auth-button:hover {
+  color: #f3ffe1;
+  border-color: #df493e;
+  background-color: #df493e;
+}
+
+.auth-button
+
+.lower-auth {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.auth-validation {
+  text-align: left;
+  color: #e33e33;
+}
+
+/* Sidebar and dashboard content
+------------------------------------------------------*/
+
+/* The side navigation menu */
+.sidebar {
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #000805;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #f3ffe1;
+  padding: 16px;
+  text-decoration: none;
+  border-left: 0px solid #87b85d;
+  transition: border-width 0.3s ease-out;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  border-left: 5px solid #87b85d;
+  background-color: #02140d;
+  color: #f3ffe1;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  border-left: 5px solid #87b85d;
+  color: #f3ffe1;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}

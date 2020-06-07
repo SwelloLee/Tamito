@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@{
+    Layout = "/Pages/Shared/_LoginLayout.cshtml";
+}
+
+<div class="contain">
+    <div class="auth">
+        <section class="inner">
+            <form type="get">
+                <h1 class="display-4">Tamito</h1>
+                <p>Keep Track and Organize Bug Tickets</p>
+                <hr />
+                <div class="elem">
+                    <button type="submit" class="btn auth-button" asp-area="Identity" asp-page="/Account/Login">Log in</button>
+                </div>
+                <div class="elem">
+                    <p class="lower-auth">
+                        <a asp-area="Identity" asp-page="Account/Register">Register as a new user</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
