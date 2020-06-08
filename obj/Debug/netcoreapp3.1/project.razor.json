@@ -14458,6 +14458,110 @@
       },
       {
         "Kind": "ITagHelper",
+        "Name": "BugTracker.ActiveRouteTagHelper",
+        "AssemblyName": "BugTracker",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "is-active-route",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-action",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "<member name=\"P:BugTracker.ActiveRouteTagHelper.Action\">\r\n    <summary>The name of the action method.</summary>\r\n    <remarks>Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> is non-<c>null</c>.</remarks>\r\n</member>\r\n",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Action"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-controller",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "<member name=\"P:BugTracker.ActiveRouteTagHelper.Controller\">\r\n    <summary>The name of the controller.</summary>\r\n    <remarks>Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> is non-<c>null</c>.</remarks>\r\n</member>\r\n",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Controller"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Page"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "page-family",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Family"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-all-route-data",
+            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.String>",
+            "IsEnum": false,
+            "IndexerNamePrefix": "asp-route-",
+            "IndexerTypeName": "System.String",
+            "Documentation": "<member name=\"P:BugTracker.ActiveRouteTagHelper.RouteValues\">\r\n    <summary>Additional parameters for the route.</summary>\r\n</member>\r\n",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "RouteValues"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "BugTracker.ActiveRouteTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting elements containing attributes with URL expected values.\n            </summary>\n            <remarks>Resolves URLs starting with '~/' (relative to the application's 'webroot' setting) that are not\n            targeted by other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s. Runs prior to other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s to ensure\n            application-relative URLs are resolved.</remarks>\n        ",
@@ -20521,6 +20625,11 @@
   "RootNamespace": "BugTracker",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Tickets\\Create.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Tickets\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
       "FileKind": "mvc"
@@ -20533,6 +20642,11 @@
     {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\App_Code\\MyHelpers.cshtml",
+      "TargetPath": "App_Code\\MyHelpers.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20621,6 +20735,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Projects\\Delete.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Projects\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Projects\\Edit.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Projects\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
       "FileKind": "mvc"
@@ -20668,6 +20792,16 @@
     {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Projects\\Create.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Projects\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Tickets\\Edit.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Tickets\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20721,6 +20855,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Tickets\\Delete.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Tickets\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
       "FileKind": "mvc"
@@ -20751,13 +20890,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Tickets\\Index.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Tickets\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Projects\\Index.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Projects\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Tickets\\Details.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Tickets\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20768,6 +20922,11 @@
     {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Dashboard\\Pages\\Projects\\Details.cshtml",
+      "TargetPath": "Areas\\Dashboard\\Pages\\Projects\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

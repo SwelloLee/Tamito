@@ -34,10 +34,12 @@
     </header>
 
         <div class="sidebar">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a is-active-route class="nav-item" page-family="/Dashboard" asp-area="Dashboard" asp-page="/Index">Dashboard</a>
+            <a is-active-route class="nav-item" page-family="/Dashboard/Projects" asp-area="Dashboard" asp-page="/Projects/Index">My Projects</a>
+            <a is-active-route class="nav-item" page-family="/Dashboard/Tickets" asp-area="Dashboard" asp-page="/Tickets/Index">My Tickets</a>
+            <a is-active-route class="nav-item" page-family="/Identity/Account/Manage" asp-area="Identity" asp-page="/Account/Manage/Index">Profile Settings</a>
+            <!--<a is-active-route href="#Manage Users">Manage Users</a>
+            <a is-active-route href="#Manage Profile">Profile Settings</a>-->
         </div>
 
         <div class="content">

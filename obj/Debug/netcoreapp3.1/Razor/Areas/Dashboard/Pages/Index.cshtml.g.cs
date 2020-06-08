@@ -12,8 +12,29 @@ namespace RazorPagesAreas.Areas.Dashboard.Pages
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\Heung Gi\Desktop\Heung\Code\Web Apps\BugTracker\BugTracker\Areas\Dashboard\Pages\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Heung Gi\Desktop\Heung\Code\Web Apps\BugTracker\BugTracker\Areas\Dashboard\Pages\_ViewImports.cshtml"
+using BugTracker;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\Heung Gi\Desktop\Heung\Code\Web Apps\BugTracker\BugTracker\Areas\Dashboard\Pages\_ViewImports.cshtml"
+using BugTracker.Data;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a0a86f4f523ab2128235a4dc7abdd34fcb4aafce", @"/Areas/Dashboard/Pages/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98a6161fee4c13ce32a1e2ecb5235ee2941d550d", @"/Areas/Dashboard/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e2d6ddf2f33b68e0a0b5fde5f3d82a01e97900ae", @"/Areas/Dashboard/Pages/_ViewImports.cshtml")]
     public class Areas_Dashboard_Pages_Index : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998
