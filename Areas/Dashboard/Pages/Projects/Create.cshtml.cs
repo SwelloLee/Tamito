@@ -31,7 +31,7 @@ namespace BugTracker.Areas.Dashboard.Pages.Projects
         }
 
         [BindProperty]
-        public ProjectModel ProjectModel { get; set; }
+        public Project Project { get; set; }
         public ProjectUsers ProjectUsers = new ProjectUsers();
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
@@ -42,29 +42,25 @@ namespace BugTracker.Areas.Dashboard.Pages.Projects
             {
                 return Page();
             }
-   
-            _logger.LogInformation("This is happening");
 
             // TODO - Make this be globally viable
             DateTime localDate = DateTime.Now;
             IdentityUser identityUser = await _userManager.GetUserAsync(User);
-            //int projectID = Project.ID;
                 
-            ProjectModel.Project.UserID = identityUser?.Id;
-            ProjectUsers.UserID = identityUser?.Id;
+            Project.UserID = identityUser?.Id;
+            Project.CreateDate = localDate;
 
-            ProjectModel.Project.CreateDate = localDate;
-
-            ProjectUsers.ProjectID = ProjectModel.Project.ID;
-            ProjectUsers.CreateDate = localDate;
+            _context.Project.Add(Project);
+            await _context.SaveChangesAsync();
             
-            _logger.LogInformation("I am about to submit Project to the database");
+            ProjectUsers.UserID = identityUser?.Id;
+            ProjectUsers.ProjectID = Project.ID;
+            ProjectUsers.CreateDate = localDate;
 
-            _context.Project.Add(ProjectModel.Project);
             _context.ProjectUsers.Add(ProjectUsers);
             await _context.SaveChangesAsync();
- 
-            _logger.LogInformation("I have succeeded ?");
+
+            _logger.LogInformation("Project and ProjectUsers row created");
 
             return RedirectToPage("./Index");
         }

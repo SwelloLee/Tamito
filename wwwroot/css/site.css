@@ -96,6 +96,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
+  background-color: #f3ffe1;
   margin-bottom: 60px;
 }
 
@@ -192,7 +193,7 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #000805;
+  background-color: #02140d;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -200,9 +201,13 @@ body {
 
 /* Sidebar links */
 .sidebar a {
+  border-radius: 3px;
   display: block;
   color: #f3ffe1;
-  padding: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
   text-decoration: none;
   border-left: 0px solid #87b85d;
   transition: border-width 0.1s ease-out;
@@ -210,14 +215,14 @@ body {
 
 /* Active/current link */
 .sidebar a.active {
-  border-left: 5px solid #87b85d;
-  background-color: #02140d;
+  background-color: #87b85d;
   color: #f3ffe1;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   border-left: 5px solid #87b85d;
+  background-color: #022519;
   color: #f3ffe1;
 }
 
