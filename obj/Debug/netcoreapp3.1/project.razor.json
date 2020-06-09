@@ -20645,11 +20645,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\App_Code\\MyHelpers.cshtml",
-      "TargetPath": "App_Code\\MyHelpers.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Heung Gi\\Desktop\\Heung\\Code\\Web Apps\\BugTracker\\BugTracker\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
       "FileKind": "mvc"

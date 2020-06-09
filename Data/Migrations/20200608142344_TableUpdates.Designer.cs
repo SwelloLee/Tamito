@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BugTracker.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200608070511_AddProjectAndTicketTables")]
-    partial class AddProjectAndTicketTables
+    [Migration("20200608142344_TableUpdates")]
+    partial class TableUpdates
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,8 +36,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<int>("TypeID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -59,8 +59,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -79,8 +79,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<int>("ProjectID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -105,8 +105,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -125,8 +125,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<int>("TicketID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 

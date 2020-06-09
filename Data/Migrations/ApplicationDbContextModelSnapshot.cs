@@ -34,8 +34,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<int>("TypeID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -57,8 +57,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -77,8 +77,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<int>("ProjectID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -103,8 +103,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
@@ -123,8 +123,8 @@ namespace BugTracker.Data.Migrations
                     b.Property<int>("TicketID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 

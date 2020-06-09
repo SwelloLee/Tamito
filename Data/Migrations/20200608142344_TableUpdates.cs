@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BugTracker.Data.Migrations
 {
-    public partial class AddProjectAndTicketTables : Migration
+    public partial class TableUpdates : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace BugTracker.Data.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    UserID = table.Column<int>(nullable: false),
+                    UserID = table.Column<string>(nullable: true),
                     TypeID = table.Column<int>(nullable: false),
                     CommentType = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
@@ -30,7 +30,7 @@ namespace BugTracker.Data.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    UserID = table.Column<int>(nullable: false),
+                    UserID = table.Column<string>(nullable: true),
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
                     CreateDate = table.Column<DateTime>(nullable: false)
@@ -46,7 +46,7 @@ namespace BugTracker.Data.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    UserID = table.Column<int>(nullable: false),
+                    UserID = table.Column<string>(nullable: true),
                     ProjectID = table.Column<int>(nullable: false),
                     CreateDate = table.Column<DateTime>(nullable: false)
                 },
@@ -61,7 +61,7 @@ namespace BugTracker.Data.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    UserID = table.Column<int>(nullable: false),
+                    UserID = table.Column<string>(nullable: true),
                     ProjectID = table.Column<int>(nullable: false),
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
@@ -78,7 +78,7 @@ namespace BugTracker.Data.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    UserID = table.Column<int>(nullable: false),
+                    UserID = table.Column<string>(nullable: true),
                     TicketID = table.Column<int>(nullable: false),
                     CreateDate = table.Column<DateTime>(nullable: false)
                 },

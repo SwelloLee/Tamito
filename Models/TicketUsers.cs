@@ -6,7 +6,7 @@ namespace BugTracker.Models
     public class TicketUsers
     {
         public int ID { get; set; }
-        public int UserID { get; set; }
+        public string UserID { get; set; }
         public int TicketID { get; set; }
         
         [DataType(DataType.Date)]

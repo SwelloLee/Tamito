@@ -6,7 +6,7 @@ namespace BugTracker.Models
     public class Comment
     {
         public int ID { get; set; }
-        public int UserID { get; set; }
+        public string UserID { get; set; }
         public int TypeID { get; set; }
         public string CommentType { get; set; }
 
